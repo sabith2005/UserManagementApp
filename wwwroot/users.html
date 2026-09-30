@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management</title>
+</head>
+
+<body>
+
+    <h1>User Management</h1>
+
+    <p id="currentUser"></p>
+
+    <button onclick="window.location.href='add-user.html'">
+        Add User
+    </button>
+
+    <button onclick="window.location.href='fibonacci.html'">
+        Fibonacci
+    </button>
+
+    <button onclick="logout()">
+        Logout
+    </button>
+
+    <hr>
+
+    <h2>User List</h2>
+
+    <input type="text"
+           id="searchInput"
+           placeholder="Search name or email">
+
+    <button onclick="searchUsers()">
+        Search
+    </button>
+
+    <button onclick="clearSearch()">
+        Clear
+    </button>
+
+    <br><br>
+
+    <table border="1" cellpadding="8">
+
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="userTableBody">
+        </tbody>
+
+    </table>
+
+    <p id="recordInfo"></p>
+
+    <div id="pagination"></div>
+
+    <script src="/users.js"></script>
+
+</body>
+</html>
